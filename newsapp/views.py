@@ -3,7 +3,7 @@ from newsapi import NewsApiClient
 # Create your views here.
 
 def index(request):
-    newsapi = NewsApiClient(api_key = '73909c1432024857afbe16806b538f64')
+    newsapi = NewsApiClient(api_key = 'your API key')
     top = newsapi.get_top_headlines(sources = 'bbc-news')
 
     l1 = top['articles']
